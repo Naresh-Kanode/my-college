@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+     <div class="contaniner-fluid shadow p-2 m-2">
+        <div class="row text-center justify-content-center mt-2">
+            <div class="col-4 col-lg-4 col-md-4 text-center">
+                <div class="row bg-info rounded-pill w-100">
+                    <h3 class="text-center">Internal Marks</h3>
+                </div>
+                <label for="floatingSelectGrid">Select Internal</label>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 mt-5 justify-content-center text-center align-content-center">
+            <div class="form-floating">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Enter Student Code">
+                    <label for="floatingInput">Enter Student Code</label>
+                </div>
+               
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-8 mt-5 mt-5">
+            <button class="btn btn-info shadow w-100 p-3 ">SUBMIT</button>
+        </div>
+    </div>
+   
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Student_Code</th>
+                    <th scope="col">Student_Name</th>
+                    <th scope="col"></th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<div id="footer"></div>
+
+</html>

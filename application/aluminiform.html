@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback form</title>
+    <link href="../assets/css/style.css"rel="stylesheet">
+    <link href="../assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class=" shadow m-3">
+        <div class="container-fluid p-2 m-sm-5 p-sm-2">
+            <div class="row p-2 justify-content-center">
+                <div class="col-12 col-lg-4 col-md-6 p-0 border-1 border-info rounded-3 shadow">
+                    <form method="post" action="feedback.php">
+                        <div class="bg-info rounded-3 p-3 text-center  text-light fw-bold">
+                            FEEDBACK FORM
+                        </div>
+                        <div class=" p-3 pb-2 ">
+                            <input type="text" class="form-control rounded-pill shadow " name="studentName" placeholder="Enter Student Name" required>
+                        </div>
+
+                        <div class=" p-3 pb-2 ">
+                            <input type="text" class="form-control rounded-pill shadow " name="companyName" placeholder="Enter company Name" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="course" placeholder="Enter Course" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="designation" placeholder="Enter Designation" required>
+                        </div>
+                        <div class="  p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="companyLocation" placeholder="Enter company Location" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="batchYear" placeholder="Enter Batch Year" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="email" class="form-control rounded-pill shadow" name="email" placeholder="Enter Your EmailID" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="address" placeholder="Enter Your Adderess" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="phonenumber" placeholder="Enter Your Phone Number" required>
+                        </div>
+                        <div class=" p-3 pb-2">
+                            <input type="text" class="form-control rounded-pill shadow" name="comment" placeholder="Comment About College" required>
+                        </div>
+                        <input type="submit" class="btn btn-success w-100"></button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<div id="footer"></div>
+
+</html>
